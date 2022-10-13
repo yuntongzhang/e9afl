@@ -274,6 +274,9 @@ int main(int argc, char **argv)
     command += "-O2 ";
     command += "--option --mem-granularity=4096 ";
 
+    command += "--option --mem-ub=0x70000000 ";
+    command += "--option --loader-base=0x70007000 ";
+
     command += "-o \"";
     command += output;
     command += "\" ";
